@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Por Hacer
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <!-- Componente donde se muestran las listas --> 
+  <app-listas [tipo]="'por hacer'" ></app-listas>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" (click)= "AgregarLista()"> 
+    <ion-fab-button> 
+      <ion-icon name="arrow-forward-circle"></ion-icon> 
+    </ion-fab-button> 
+  </ion-fab> 
+
+</ion-content>
